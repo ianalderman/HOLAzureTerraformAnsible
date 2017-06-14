@@ -20,7 +20,7 @@ variable tenant_id {
 
 variable StudentId {
     description = "The unique number for the student in this Lab"
-    default = ""
+    default = "1"
 }
 
 variable azure_region {
