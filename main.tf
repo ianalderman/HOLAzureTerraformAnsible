@@ -35,7 +35,7 @@ module "lab_bastion" {
   version         = "latest"
   computer_name   = "vmBastion01"
   admin_username  = "tflabadm"
-  admin_password  = "Passw0rd123!=="
+  admin_password  = "${var.admin_password}"
 }
 
 module "lab_webscaleset" {
@@ -52,5 +52,5 @@ module "lab_webscaleset" {
   version         = "latest"
   computer_name   = "vmWebserver"
   admin_username  = "tflabadm"
-  admin_password  = "Passw0rd123!=="
+  admin_password  = "${var.admin_password}"
 }

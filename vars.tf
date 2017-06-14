@@ -27,3 +27,8 @@ variable azure_region {
     description = "The azure region to deploy to e.g., northeurope"
     default = "northeurope"
 }
+
+variable admin_password {
+    description = "The administrator password for the VMs"
+    default = ""
+}
