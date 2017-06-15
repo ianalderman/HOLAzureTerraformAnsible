@@ -1,11 +1,11 @@
 #!/bin/bash
 
-sudo apt-get update -y
-sudo apt-get install software-properties-common -y
-sudo apt-get install git -y
-sudo apt-add-repository ppa:ansible/ansible -y
-sudo apt-get update -y
-sudo apt-get install ansible -y
+apt-get update -y
+apt-get install software-properties-common -y
+apt-get install git -y
+apt-add-repository ppa:ansible/ansible -y
+apt-get update -y
+apt-get install ansible -y
 
-sudo mkdir /etc/ansible/conf
-sudo ansible-pull -d /etc/ansible/init -U https://github.com/ianalderman/holansiblepull.git
+mkdir /etc/ansible/conf
+ansible-pull -d /etc/ansible/init -U https://github.com/ianalderman/holansiblepull.git
